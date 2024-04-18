@@ -1,0 +1,11 @@
+pandas
+matplotlib
+torch
+torchvision
+timm
+einops
+rasterio
+datasets
+tifffile
+wandb
+lightning

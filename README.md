@@ -24,3 +24,10 @@ wandb login
 * Stuctured codebase organized by PyTorch Lightning
 * Pretrained model based on Prithvi-100M
 * Training and evaluation visualization via wandb
+
+## Training
+* set the training data path in ```config.json```
+* Run train.py
+
+## Inference
+* Use inference.ipynb

@@ -4,10 +4,14 @@ import yaml
 from .Prithvi import MAEEncoder
 from pathlib import Path
 import functools
+import json
+
+with (Path(__file__).parent.parent / 'setting.json').open() as f:
+    config = json.load(f)
 
 
 def load_encoder(frame: int = 1):
-    ckpt = Path(__file__).parent / "Prithvi_100M.pt"
+    ckpt = config["base checkpoint"]
     yaml_file = Path(__file__).parent / "Prithvi_100M_config.yaml"
 
     # Load the model configuration from YAML

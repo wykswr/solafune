@@ -7,7 +7,7 @@ from datetime import datetime
 from pathlib import Path
 import json
 
-with (Path(__file__).parent/'config.json').open() as f:
+with (Path(__file__).parent/'setting.json').open() as f:
     config = json.load(f)
 
 CKPT = Path(__file__).parent/"ckpt"
